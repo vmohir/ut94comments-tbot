@@ -1,0 +1,5 @@
+{
+  "uid": "edmusicsbot",
+  "append": true,
+  "script": "dist/src/index.js"
+}
