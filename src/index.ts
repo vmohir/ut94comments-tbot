@@ -19,7 +19,6 @@ const MEMORY: { [chatId: string]: MemObj } = {};
 
 bot.on('text', (msg, metadata) => {
   try {
-    console.log('TCL: msg', msg);
     const chatId = msg.chat.id;
     const { text } = msg;
     MEMORY[chatId] = MEMORY[chatId] || {};
