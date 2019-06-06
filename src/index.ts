@@ -58,7 +58,7 @@ ${MEMORY[chatId].comment}
       { reply_markup: { remove_keyboard: true } }
     ),
     bot.sendMessage(chatId, `حله! پیامتو به صورت ناشناس واسه @mr_amdiii فرستادم. این پیامیه که واسه‌ش فرستادم:`, {
-      reply_markup: { keyboard: [[]] }
+      reply_markup: { remove_keyboard: true }
     })
   ]).then(([adminSentMessage]) => {
     bot.forwardMessage(chatId, adminSentMessage.chat.id, adminSentMessage.message_id).then(_ => {
